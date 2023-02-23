@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+:root {
+
+    --color1:hsl(158, 36%, 37%);
+    --color2:hsl(30, 38%, 92%);
+    --color3:hsl(212, 21%, 14%);
+    --color4:hsl(228, 12%, 48%);
+    --color5: #fff;   
+}
+.body {
+
+    font-size: 14px;
+    
+}
+
+.container {
+
+    display: flex;
+    width:100%;
+    justify-content: center;
+    background-color: var(--color2);
+    min-height: 100vh;
+    align-items: center;
+
+}
+.card {
+
+    width: 345px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(0,0,0,0.5);
+    height: 612px;
+}
+.card__flyer {
+
+    height: 244px;
+    width: 100%;
+    overflow: hidden;
+    
+    
+    
+}
+.card__img {
+
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.card__information {
+
+    background-color: #fff;
+    height: 100%;
+}
+.card__p1 {
+
+    font-family: 'Montserrat';
+    color: var(--color4);
+    letter-spacing: 5px;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding:  20px 24px 8px;
+    
+
+}
+.card__title {
+
+    font-family:'Fraunces';
+    font-size: 1.9em;
+    line-height: 35px;
+    font-weight: 700;
+    margin: 5px 0;
+    color:var(--color3);
+    padding: 0 24px;
+
+}
+.card__description {
+
+    color: var(--color4);
+    font-family: 'Montserrat';
+    line-height: 24px;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 10px 24px 0;
+
+}
+.card__price {
+
+    display: flex;
+    margin-top: 20px;
+    padding: 0 24px;
+    align-items: center;
+}
+.card__live {
+    
+    font-family: 'Fraunces';
+    font-size: 30px;
+    color:var(--color1);
+    
+}
+.card__real {
+    margin-left: 15px;
+    font-size: 0.9em;
+    text-decoration: line-through;
+    color:var(--color4);
+    font-family: 'Montserrat';
+    font-weight: 700;
+
+
+
+}
+
+.card__button {
+
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    border:none;
+    border-radius: 15px;
+    margin: 20px auto 9px;
+}
+.card__cart {
+
+    margin-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+
+
+    .container  {
+        
+
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .card {
+        margin-top: 0;
+        width: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 450px; 
+             
+    }
+    .card__flyer {
+
+        grid-column: 1;
+        grid-row: 1/2;
+        width: 100%;
+        height:100%;
+    }
+    .card__img {
+
+        content: url(/images/image-product-desktop.jpg);
+        
+            height: 100%;
+                
+
+    }
+    .card__button {
+
+        width: 248px;
+        height: 49px;
+        margin-top:31px;
+        
+
+    }
+    .card__price {
+
+        margin-top: 37px
+    }
+}
+
+/* I am Beginner :) Thank You for Watching!!!! */
+
+
+    
